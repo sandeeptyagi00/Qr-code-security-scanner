@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Security Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>QR Code Security Scanner</h1>
+    <p>Scan QR codes and detect suspicious links.</p>
+
+    <div id="reader"></div>
+
+    <button onclick="startScanner()">Start Scanner</button>
+    <button onclick="stopScanner()">Stop Scanner</button>
+
+    <h3>Upload QR Code Image</h3>
+    <input type="file" id="qrFile" accept="image/*">
+
+    <h3>Scan Result</h3>
+    <div id="result">Waiting for QR code...</div>
+
+    <h3>Security Analysis</h3>
+    <div id="security">No scan performed.</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
